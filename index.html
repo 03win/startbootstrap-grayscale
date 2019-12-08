@@ -23,6 +23,27 @@
 
   <meta name="author" content="">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 
 
   <!-- Bootstrap core CSS -->
@@ -45,7 +66,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">03win</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Top</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -55,16 +76,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll- trigger" href="#about">Album</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#intro">Video</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Details</a>
+            <a class="nav-link js-scroll-trigger" href="#images">Album</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Map</a>
+            <a class="nav-link js-scroll-trigger" href="#details">Details</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">More</a>
@@ -80,7 +98,8 @@
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Travel</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Come and travel with Win!!</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Here we go~</a>
+        <a href="#about" class="btn btn-primary js-scroll-trigger w3-round-xxlarge">Here we go~</a>
+        </div>
       </div>
     </div>
   </header>
@@ -102,8 +121,8 @@
 
   <style>
     .intro-section {
-      padding: 10ren 100 20;
       margin-top: 50px;
+      padding-bottom: 10%;
     }
 
     .intro-video {
@@ -124,12 +143,11 @@
     iframe {
       border-width: 20;
       margin-top: 50px;
-      margin-bottom:50px;
     }
 
-    .intro1-section {
-      padding: 10ren 100 20;
-      margin-top: 10%;
+    .images-section {
+      margin-top: 50px;
+      padding-top: 10%;
     }
 
     .slider img {
@@ -243,8 +261,8 @@
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-  <!-- Intro Section 1 -->
-  <section id="intro1" class="intro1-section text-center bg-white"></section>
+  <!-- Images Section -->
+  <section id="images" class="images-section text-center bg-white"></section>
           <div class="slider">
             <div><img src="img/slider/0.jpg"></div>
             <div><img src="img/slider/1.jpg"></div>
@@ -288,7 +306,9 @@
         </div>
       </div>
 
+
       <!-- Project One Row -->
+      <section id="details" class="details-section text-center"></section>
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
           <div class="slider">
@@ -302,8 +322,7 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">Spring</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else,
-                  along with a description.</p>
+                <p class="mb-0 text-white-50">A stunning view on HuangShan will amaze you.</p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -427,7 +446,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">travel_with_win@gmail.com</a>
               </div>
             </div>
           </div>
@@ -439,7 +458,7 @@
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">+852 2333 3333</div>
             </div>
           </div>
         </div>
